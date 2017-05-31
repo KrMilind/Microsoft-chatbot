@@ -1,8 +1,6 @@
 exports.createTelemetry = function (session, properties) {
-    
-var data = {
-        
-conversationData: JSON.stringify(session.conversationData),
+    var data = {
+        conversationData: JSON.stringify(session.conversationData),
         privateConversationData: JSON.stringify(session.privateConversationData),
         userData: JSON.stringify(session.userData),
         conversationId: session.message.address.conversation.id,
@@ -16,4 +14,4 @@ conversationData: JSON.stringify(session.conversationData),
     }
 
     return data;
-};
+};s
